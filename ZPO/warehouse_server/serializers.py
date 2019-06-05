@@ -5,14 +5,14 @@ from warehouse_server.models import Category, Product, Warehouse
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ("name", "description")
+        fields = ('id', "name", "description")
 
 
 class WarehouseSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Warehouse
-        fields = ("name", "address")
+        fields = ('id', "name", "address")
 
 
 class ProductSerializer(serializers.ModelSerializer):
@@ -21,7 +21,7 @@ class ProductSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Product
-        fields = ("name", "description", "price", "category", "warehouse", "quantity")
+        fields = ('id', "name", "description", "price", "category", "warehouse", "quantity")
 
 
 

@@ -94,9 +94,44 @@ def product_detail(request, pk, format=None):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-class ListWarehouseView(generics.ListAPIView):
+@api_view(['GET', 'POST'])
+def warehouse_list(request, format=None):
     """
-    Provides a get method handler.
+    List all warehouses, or create a new warehouse.
     """
-    queryset = Warehouse.objects.all()
-    serializer_class = WarehouseSerializer
+    if request.method == 'GET':
+        warehouses = Warehouse.objects.all()
+        serializer = WarehouseSerializer(warehouses, many=True)
+        return Response(serializer.data)
+    elif request.method == 'POST':
+        serializer = WarehouseSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['GET', 'PUT', 'DELETE'])
+def warehouse_detail(request, pk, format=None):
+    """
+    Retrieve, update or delete a warehouse.
+    """
+    try:
+        warehouse = Warehouse.objects.get(pk=pk)
+    except Product.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+    if request.method == 'GET':
+        serializer = WarehouseSerializer(warehouse)
+        return Response(serializer.data)
+
+    elif request.method == 'PUT':
+        serializer = WarehouseSerializer(warehouse, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    elif request.method == 'DELETE':
+        warehouse.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
