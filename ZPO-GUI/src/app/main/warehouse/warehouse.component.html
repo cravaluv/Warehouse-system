@@ -1,0 +1,16 @@
+<table *ngIf="warehouses.length > 0" class="table m-3">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nazwa</th>
+        <th scope="col">Adres</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let warehouse of warehouses">
+        <th scope="row">{{warehouse.id}}</th>
+        <td>{{warehouse.name}}</td>
+        <td>{{warehouse.address}}</td>
+      </tr>
+    </tbody>
+  </table>
