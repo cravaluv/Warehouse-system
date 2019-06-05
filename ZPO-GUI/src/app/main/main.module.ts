@@ -12,6 +12,8 @@ import { CategoryService } from 'app/core/services/category.service';
 import { HttpClientModule } from '@angular/common/http'; 
 import { CategoryComponent } from './category/category.component';
 import { WarehouseComponent } from './warehouse/warehouse.component';
+import { WarehouseEditComponent } from './warehouse/warehouse-edit.component';
+import { CategoryEditComponent } from './category/category-edit.component';
 
 @NgModule({
     imports: [
@@ -22,13 +24,13 @@ import { WarehouseComponent } from './warehouse/warehouse.component';
         HttpClientModule
     ],
     declarations: [
-        MainComponent, CategoryComponent, WarehouseComponent
+        MainComponent, CategoryComponent, WarehouseComponent, WarehouseEditComponent, CategoryEditComponent
     ],
     providers: [
         CategoryService, WarehouseService
     ],
     entryComponents: [
-
+        WarehouseEditComponent, CategoryEditComponent
     ]
 })
 
