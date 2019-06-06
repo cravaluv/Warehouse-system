@@ -1,0 +1,64 @@
+<div class="modal-header">
+    <h4 class="modal-title">Produkt</h4>
+    <button type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body"> <div class="m-3">
+        <div class="row">
+                <div class="form-group"   style="min-width: 100%">
+                    <label for="name">Nazwa</label>
+                    <input autofocus id="name" name="name" class="form-control" [(ngModel)]="modelCopy.name">
+        
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group"  style="min-width: 100%">
+                    <label for="description">Opis</label>
+                    <textarea id="description" name="description" class="form-control" [(ngModel)]="modelCopy.description"></textarea>
+        
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group"  style="min-width: 100%">
+                    <label for="price">Cena</label>
+                    <input type="number" min=0 id="price" name="price" class="form-control" [(ngModel)]="modelCopy.price">
+        
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group"  style="min-width: 100%">
+                    <label for="quantity">Ilość</label>
+                    <input type="number" min=0 id="price" name="quantity" class="form-control" [(ngModel)]="modelCopy.quantity">
+        
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group"  style="min-width: 100%">
+                    <label for="category">Kategoria</label>
+                    <select id="category" name="category" class="form-control" [(ngModel)]="modelCopy.category">
+                        <option *ngFor="let cat of categories" [ngValue]="cat" [selected]="modelCopy.category && cat.id == modelCopy.category.id">{{cat.name}} | {{cat.description}}</option>
+                      </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group"  style="min-width: 100%">
+                    <label for="warehouse">Magazyn</label>
+                    <select id="warehouse" name="warehouse" class="form-control" [(ngModel)]="modelCopy.warehouse">
+                        <option *ngFor="let warehouse of warehouses" [ngValue]="warehouse" [selected]="modelCopy.warehouse && warehouse.id == modelCopy.warehouse.id">{{warehouse.name}} | {{warehouse.address}}</option>
+                      </select>
+                </div>
+            </div>
+
+</div>
+
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="onSubmit()">Zatwierdź</button>
+    <button type="button" class="btn btn-outline-dark" (click)="onDismiss()">Zamknij</button>
+</div>

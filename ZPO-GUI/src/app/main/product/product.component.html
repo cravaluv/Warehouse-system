@@ -1,0 +1,33 @@
+<div id="site-panel" class="m-3">
+    <button class="btn btn-primary" (click)="add()">Dodaj produkt</button>
+</div>
+
+<div  class="m-3">
+    <table *ngIf="products.length > 0" class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nazwa</th>
+            <th scope="col">Opis</th>
+            <th scope="col">Cena</th>
+            <th scope="col">Ilość</th>
+            <th scope="col">Kategoria</th>
+            <th scope="col">Magazyn</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products">
+            <th scope="row">{{product.id}}</th>
+            <td>{{product.name}}</td>
+            <td>{{product.description}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.quantity}}</td>
+            <td>{{product?.category.name}}</td>
+            <td>{{product?.warehouse.name}}</td>
+            <td><button class="btn btn-secondary" (click)="update(product)">Edytuj</button>
+                <button class="btn btn-secondary  ml-1">Usuń</button></td>
+          </tr>
+        </tbody>
+      </table>
+</div>

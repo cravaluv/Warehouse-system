@@ -14,6 +14,9 @@ import { CategoryComponent } from './category/category.component';
 import { WarehouseComponent } from './warehouse/warehouse.component';
 import { WarehouseEditComponent } from './warehouse/warehouse-edit.component';
 import { CategoryEditComponent } from './category/category-edit.component';
+import { ProductComponent } from './product/product.component';
+import { ProductEditComponent } from './product/product-edit.component';
+import { ProductService } from 'app/core/services/product.service';
 
 @NgModule({
     imports: [
@@ -24,13 +27,13 @@ import { CategoryEditComponent } from './category/category-edit.component';
         HttpClientModule
     ],
     declarations: [
-        MainComponent, CategoryComponent, WarehouseComponent, WarehouseEditComponent, CategoryEditComponent
+        MainComponent, CategoryComponent, WarehouseComponent, WarehouseEditComponent, CategoryEditComponent, ProductComponent, ProductEditComponent
     ],
     providers: [
-        CategoryService, WarehouseService
+        CategoryService, WarehouseService, ProductService
     ],
     entryComponents: [
-        WarehouseEditComponent, CategoryEditComponent
+        WarehouseEditComponent, CategoryEditComponent, ProductEditComponent
     ]
 })
 
