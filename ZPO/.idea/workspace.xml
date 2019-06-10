@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72bf8336-a1b6-47d8-9c8a-4ddbd6217722" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ZPO-GUI/src/app/core/models/product.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ZPO-GUI/src/app/core/models/product.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ZPO-GUI/src/app/main/category/category.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ZPO-GUI/src/app/main/category/category.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ZPO-GUI/src/app/main/main-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ZPO-GUI/src/app/main/main-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ZPO-GUI/src/app/main/main.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ZPO-GUI/src/app/main/main.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ZPO-GUI/src/app/main/warehouse/warehouse.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ZPO-GUI/src/app/main/warehouse/warehouse.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/warehouse_server/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
-              <caret line="112" selection-start-line="112" selection-end-line="112" />
+            <state relative-caret-position="312">
+              <caret line="132" column="48" lean-forward="true" selection-start-line="132" selection-start-column="48" selection-end-line="132" selection-end-column="48" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -143,8 +137,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
-    <option name="width" value="1939" />
-    <option name="height" value="1049" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -234,23 +228,24 @@
       <workItem from="1557913921941" duration="5074000" />
       <workItem from="1557996477626" duration="9578000" />
       <workItem from="1559750997716" duration="7609000" />
-      <workItem from="1559848642274" duration="299000" />
+      <workItem from="1559848642274" duration="1370000" />
+      <workItem from="1560182503446" duration="1313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22560000" />
+    <option name="totallyTimeSpent" value="24944000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23324397" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23659517" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4966488" visible="true" weight="0.22630835" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4966488" weight="0.22630835" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -260,7 +255,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="manage.py@ZPO" order="10" sideWeight="0.7396755" weight="0.4412094" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32956153" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5033512" side_tool="true" visible="true" weight="0.22630835" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5033512" side_tool="true" visible="true" weight="0.39886847" />
       <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.49778762" weight="0.32922733" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -362,8 +357,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/warehouse_server/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        <state relative-caret-position="312">
+          <caret line="132" column="48" lean-forward="true" selection-start-line="132" selection-start-column="48" selection-end-line="132" selection-end-column="48" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
